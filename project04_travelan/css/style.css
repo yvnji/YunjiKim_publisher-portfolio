@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* 
+
+작성자 : 김윤지
+트래블랜 css
+update : 22.07.19
+
+*/
+
+/* 브라우저 세팅 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #202020;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #202020;
+}
+
+.hide {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/* #wrap */
+#wrap {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    background-color: #ffcb8f;
+}
+
+/* overview */
+.overview_in {
+    position: relative;
+    padding: 30px 15px 0 15px;
+}
+
+.overview img {
+    width: 100%;
+}
+
+/* 버튼 */
+.goTop {
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 15px;
+    color: #FF8A00;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 80px;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.goTop::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 11px auto 0 auto;
+    border-right: 1px solid #FF8A00;
+    border-top: 1px solid #FF8A00;
+    transform: rotate(-45deg);
+}
+
+/* PC 화면 */
+@media (min-width:1200px) {
+    .overview_in {
+        position: relative;
+        width: 1440px;
+        margin: 0 auto;
+        padding: 100px 0 0 0;
+    }
+
+    /* 버튼 */
+    .goTop {
+        bottom: 20px;
+        right: 140px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 14px;
+        font-weight: 500;
+        box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+
+    .goTop::before {
+        width: 11px;
+        height: 11px;
+        margin: 14px auto 0 auto;
+    }
+}
