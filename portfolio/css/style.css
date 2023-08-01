@@ -67,12 +67,12 @@ button {
 
 /* #header */
 #header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  z-index: 200;
+  z-index: 600;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -527,11 +527,11 @@ button {
 }
 
 .project .swiper-slide.slide01 a {
-  background-image: url(../img/project01_poscoChemical.png);
+  background-image: url(../img/project02_byeolmadang.png);
 }
 
 .project .swiper-slide.slide02 a {
-  background-image: url(../img/project02_byeolmadang.png);
+  background-image: url(../img/project01_poscoChemical.png);
 }
 
 .project .swiper-slide.slide03 a {
@@ -580,13 +580,13 @@ button {
 }
 
 .p_name.n01::after {
-  left: 100px;
-  background-image: url(../img/projectNum01.png);
+  left: 108px;
+  background-image: url(../img/projectNum02.png);
 }
 
 .p_name.n02::after {
-  left: 108px;
-  background-image: url(../img/projectNum02.png);
+  left: 110px;
+  background-image: url(../img/projectNum01.png);
 }
 
 .p_name.n03::after {
@@ -1103,11 +1103,11 @@ button {
   }
 
   .p_name.n03::after {
-    left: 158px;
+    left: 100px;
   }
 
   .p_name.n04::after {
-    left: 100px;
+    left: 50px;
   }
 
   .p_name.n05::after {
