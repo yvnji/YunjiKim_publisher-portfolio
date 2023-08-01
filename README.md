@@ -8,7 +8,7 @@
 <br />
 
 ## 🔗배포 링크 
-https://yvnji.github.io/YunjiKim_publisher-portfolio/portfolio/index.html
+https://yvnji.github.io/YunjiKim_publisher-portfolio/portfolio
 
 <br />
 
