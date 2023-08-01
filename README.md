@@ -18,7 +18,7 @@ https://yvnji.github.io/YunjiKim_publisher-portfolio/portfolio
 <br />
 
 ## 🧰기술스택 및 기여도
-- **기술스택** : `HTML`, `CSS`, `JavaScript`, `jQuery`
+- **기술스택** : `HTML5`, `CSS3`, `JavaScript`, `jQuery`
 - **기여도** : 개인 100%
   
 <br />
