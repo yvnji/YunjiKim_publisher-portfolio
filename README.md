@@ -33,6 +33,3 @@ https://yvnji.github.io/YunjiKim_publisher-portfolio/portfolio
 
 ### 3. 여행일정 관리 어플, 트래블랜
 ![preview-travelan](https://github.com/yvnji/YunjiKim_publisher-portfolio/assets/126065194/7fddb012-18ba-48eb-bcfd-2a7b02d71152)
-
-### 4. 쿠팡 웹 리뉴얼
-![preview-coupang](https://github.com/yvnji/YunjiKim_publisher-portfolio/assets/126065194/95d29f88-f2da-4bad-b310-d18d496077e1)
