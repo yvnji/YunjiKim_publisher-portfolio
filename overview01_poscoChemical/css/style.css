@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+/* 
+
+작성자 : 김윤지
+포스코케미칼 개요 css
+update : 22.07.19
+
+*/
+
+/* 브라우저 세팅 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #202020;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #202020;
+}
+
+.hide {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/* #wrap */
+#wrap {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    background-color: #002033;
+}
+
+/* overview */
+.overview_in {
+    position: relative;
+    padding: 30px 15px 0 15px;
+}
+
+.overview img {
+    width: 100%;
+}
+
+/* 버튼 */
+.goTop {
+    position: fixed;
+    bottom: 15px;
+    left: 25px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 15px;
+    color: #00578a;
+    font-weight: 600;
+    background-color: #f8fcff;
+    border-radius: 80px;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.goTop::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 11px auto 0 auto;
+    border-right: 1px solid #00578a;
+    border-top: 1px solid #00578a;
+    transform: rotate(-45deg);
+}
+
+.goSite {
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+}
+
+.goSite a {
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    padding: 7px 15px 8px 15px;
+    border-radius: 50px;
+    background-color: #00578a;
+    box-shadow: 3px 2px 8px rgba(0, 29, 46, 0.3);
+}
+
+.goSite2 {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+
+.goSite2 a {
+    display: block;
+    width: 150px;
+    height: 38px;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    line-height: 37px;
+    border: 1px solid #202020;
+    border-radius: 80px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.goSite2 a:hover {
+    color: #ffffff !important;
+    border: 1px solid #00578a;
+}
+
+.goSite2 a::after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #00578a;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+    -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+    -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+    transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+    box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+
+.goSite2 a:hover::after {
+    opacity: 1;
+    width: 120%;
+}
+
+/* PC 화면 */
+@media (min-width:1200px) {
+    .overview_in {
+        position: relative;
+        width: 1600px;
+        margin: 0 auto;
+        padding: 60px 0 0 0;
+    }
+
+    /* 버튼 */
+    .goTop {
+        bottom: 20px;
+        left: 70px;
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 14px;
+    }
+
+    .goTop::before {
+        width: 11px;
+        height: 11px;
+        margin: 14px auto 0 auto;
+    }
+
+    .goSite {
+        bottom: 20px;
+        right: 27px;
+    }
+
+    .goSite a {
+        font-size: 18px;
+        padding: 12px 18px 13px 18px;
+        border-radius: 100px;
+    }
+
+    .goSite2 a {
+        font-size: 22px;
+        border-radius: 100px;
+        width: 210px;
+        height: 58px;
+        line-height: 57px;
+    }
+}
